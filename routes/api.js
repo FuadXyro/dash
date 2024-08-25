@@ -1129,34 +1129,6 @@ res.json({
   res.json(loghandler.apikey)
 }
 })
-/*
-router.get("/download/instagram", async (req, res, next) => {
-	var apikey = req.query.apikey;
-	var url = req.query.url;
-	if (!apikey) return res.json(loghandler.noapikey);
-	if (!url)
-		return res.json({
-			status: false,
-			creator: `Zeltoria`,
-			message: "Linknya Mana Anying?",
-		});
-	if (listkey.includes(apikey)) {
-		snapsave(url).then((data) => {
-			var result = data.data
-			if (data.error) {
-				return res.json(loghandler.error);
-			}
-			res.json({
-        status: true,
-        creator: 'Zeltoria',
-        result
-      })
-		})
-	} else {
-		res.json(loghandler.apikey);
-	}
-}) 
-*/
 router.get('/download/pinterest', async (req, res, next) => {
     var apikey = req.query.apikey
     var url = req.query.q

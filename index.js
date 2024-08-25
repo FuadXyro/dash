@@ -30,10 +30,10 @@ const visitorSchema = new mongoose.Schema({
 })
 const Visitor = mongoose.model("Visitor",visitorSchema)
 app.get('/count', async function(req,res){
-	let visitors = await Visitor.findOne({name: 'FuadXyro-Rest-APIs'})
+	let visitors = await Visitor.findOne({name: 'Zeltoria-Rest-APIs'})
 	if(visitors == null) {
 		const beginCount = new Visitor({
-			name : 'FuadXyro-Rest-APIs',
+			name : 'Zeltoria-Rest-APIs',
 			count : 1
 		})
 		beginCount.save()
