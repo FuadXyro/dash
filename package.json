@@ -45,7 +45,6 @@
     "qs": "^6.10.1",
     "rand-user-agent": "^1.0.107",
     "request": "^2.88.2",
-    "snapsave-downloader": "^6.9.5",
     "spinnies": "^0.5.1",
     "ssl-express-www": "^3.0.7",
     "urlencode": "^1.1.0",

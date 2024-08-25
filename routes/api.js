@@ -24,7 +24,6 @@ const {
 } = require("openai");
 const zero = require("../lib/text")
 const scr = require('@bochilteam/scraper');
-const snapsave = require("snapsave-downloader")
 const { diffusion } = require('@xct007/frieren-scraper');
 const api = require('caliph-api')
 const isImageURL = require('image-url-validator').default
@@ -1130,6 +1129,7 @@ res.json({
   res.json(loghandler.apikey)
 }
 })
+/*
 router.get("/download/instagram", async (req, res, next) => {
 	var apikey = req.query.apikey;
 	var url = req.query.url;
@@ -1155,7 +1155,8 @@ router.get("/download/instagram", async (req, res, next) => {
 	} else {
 		res.json(loghandler.apikey);
 	}
-})
+}) 
+*/
 router.get('/download/pinterest', async (req, res, next) => {
     var apikey = req.query.apikey
     var url = req.query.q
